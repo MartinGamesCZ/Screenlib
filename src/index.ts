@@ -4,3 +4,4 @@ DataManager.instance.initialize();
 
 export * from "./lib/capture";
 export * from "./browser/servo";
+export * from "./types/browser";
