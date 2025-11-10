@@ -12,7 +12,7 @@ Screenlib is a TypeScript library designed for capturing screenshots of web page
 
 |         | Linux | Windows | macOS |         |
 | ------- | ----- | ------- | ----- | ------- |
-| Servo   | ✅    | ❌      | ❌    | Default |
+| Servo   | ✅    | ✅      | ❌    | Default |
 | Chrome  | ❌    | ❌      | ❌    | WIP     |
 | Firefox | ❌    | ❌      | ❌    | WIP     |
 | WebKit  | ❌    | ❌      | ❌    | WIP     |
