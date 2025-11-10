@@ -1,5 +1,5 @@
 import path from "path";
-import { exists } from "fs/promises";
+import { existsSync } from "fs";
 import type { CaptureOptions } from "../types/lib/capture";
 import { Browser } from "../types/browser";
 import { Browsers } from "../browser/_browser";
@@ -13,7 +13,7 @@ export function captureHtml(html: string, options: CaptureOptions) {
 export async function captureFile(filePath: string, options: CaptureOptions) {
   const fullPath = path.resolve(filePath);
 
-  if (!(await exists(fullPath))) {
+  if (!existsSync(fullPath)) {
     throw new Error(`File not found: ${fullPath}`);
   }
 
