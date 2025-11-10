@@ -14,7 +14,7 @@ export const BROWSER_EXEC_CONFIG: {
       path: "servo/servo",
     },
     [Platform.Windows]: {
-      path: "servo-x86_64-windows-msvc.exe",
+      path: "servo/servo.exe",
     },
   },
 } as const;
