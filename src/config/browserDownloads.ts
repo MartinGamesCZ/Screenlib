@@ -15,5 +15,9 @@ export const BROWSER_DOWNLOADS_CONFIG: {
       url: "https://github.com/servo/servo/releases/download/v0.0.1/servo-x86_64-linux-gnu.tar.gz",
       extractor: ArchiveType.Tar,
     },
+    [Platform.Windows]: {
+      url: "https://github.com/servo/servo/releases/download/v0.0.1/servo-x86_64-windows-msvc.exe",
+      extractor: null,
+    },
   },
 } as const;

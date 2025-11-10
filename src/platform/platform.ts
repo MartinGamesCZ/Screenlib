@@ -6,7 +6,7 @@ export class PlatformManager {
   static get(): Platform {
     switch (process.platform) {
       case "win32":
-        throw new Error("Windows is not supported yet.");
+        return Platform.Windows;
       case "darwin":
         throw new Error("MacOS is not supported yet.");
       case "linux":
