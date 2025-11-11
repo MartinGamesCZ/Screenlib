@@ -2,7 +2,7 @@ import path from "path";
 import { existsSync } from "fs";
 import type { CaptureOptions } from "../types/lib/capture";
 import { Browser } from "../types/browser";
-import { Browsers } from "../browser/_browser";
+import { Browsers } from "../browser/_index";
 
 export function captureUrl(url: string, options: CaptureOptions) {
   return capture(url, options);

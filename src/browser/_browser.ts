@@ -8,10 +8,6 @@ import { spawn } from "child_process";
 import { BROWSER_EXEC_CONFIG } from "../config/browserExec";
 import { ServoBrowser } from "./servo";
 
-export const Browsers = {
-  [Browser.Servo]: ServoBrowser,
-};
-
 export abstract class BaseBrowser {
   protected readonly browserId: Browser;
   protected readonly config: BrowserConfig;
