@@ -1,6 +1,6 @@
 {
   "name": "screenlib",
-  "version": "v0.2.2",
+  "version": "v0.2.8",
   "type": "module",
   "files": [
     "dist"
@@ -22,7 +22,7 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "build": "bunup",
+    "build": "bunup && bun run build.js",
     "test": "cd test && bun run src/index.ts"
   },
   "devDependencies": {

@@ -5,7 +5,7 @@ import path from "path";
 export class DataManager {
   public static instance = new DataManager();
 
-  private rootDir = path.join(__dirname, "../..", ".data");
+  private rootDir = path.join(import.meta.dir, "../..", ".data");
 
   constructor() {}
 
